@@ -1,0 +1,9 @@
+<h1>Convert <%= @selected_curr  %></h1>
+
+<p>Go <a href="/"> back</a>.</p>
+
+<ul>
+<% @curr.each do |type , amount|%>
+<li><a href="/<%=@selected_curr %>/<%= type %>">Convert 1 <%= @selected_curr%> to <%= type %>...</a></li>
+<% end %>
+</ul>
